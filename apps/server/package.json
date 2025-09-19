@@ -1,0 +1,32 @@
+{
+  "name": "@la-ruche/server",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "main": "dist/server.js",
+  "types": "dist/server.d.ts",
+  "scripts": {
+    "dev": "ts-node-esm src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "lint": "echo 'lint stub'"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.637.0",
+    "@aws-sdk/s3-request-presigner": "^3.637.0",
+    "@aws-sdk/util-format-url": "^3.637.0",
+    "@fastify/cookie": "^9.4.0",
+    "@simplewebauthn/server": "^9.0.0",
+    "fastify": "^4.27.0",
+    "ioredis": "^5.4.1",
+    "pg": "^8.11.5",
+    "ws": "^8.18.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@types/ws": "^8.5.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}

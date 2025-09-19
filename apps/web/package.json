@@ -1,0 +1,23 @@
+{
+  "name": "@la-ruche/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "dev:3003": "next dev -p 3003",
+    "build": "next build",
+    "start": "next start",
+    "start:3003": "next start -p 3003",
+    "lint": "next lint || echo 'lint stub'"
+  },
+  "dependencies": {
+    "next": "^14.2.5",
+    "qrcode": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.13"
+  }
+}
